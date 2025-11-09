@@ -1,20 +1,22 @@
 -- ====================================
 -- DATABASE: TouchShop
 -- ====================================
-CREATE DATABASE TouchShop;
-USE TouchShop;
+ CREATE DATABASE TouchShop;
+ USE TouchShop;
 
 -- ====================================
 -- 1. Customers
 -- ====================================
 CREATE TABLE Customers (
-    customer_id INT identity(1,1) PRIMARY KEY,
+    customer_id INT IDENTITY(1,1) PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     phone VARCHAR(20),
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    profile_image VARBINARY(MAX),
+    created_at DATETIME DEFAULT GETDATE()
 );
+
 
 -- ====================================
 -- 2. Admins
@@ -25,9 +27,11 @@ CREATE TABLE Admins (
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     role VARCHAR(20) NOT NULL DEFAULT 'Manager',
+    profile_image VARBINARY(MAX),
     created_at DATETIME DEFAULT GETDATE(),
     CONSTRAINT chk_role CHECK (role IN ('SuperAdmin', 'Manager', 'Support'))
 );
+
 
 
 -- ====================================
@@ -59,11 +63,12 @@ CREATE TABLE Products (
 -- 5. ProductImages
 -- ====================================
 CREATE TABLE ProductImages (
-    image_id INT identity(1,1) PRIMARY KEY,
+    image_id INT IDENTITY(1,1) PRIMARY KEY,
     product_id INT NOT NULL,
-    image_url VARCHAR(255) NOT NULL,
-    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+    image_data VARBINARY(MAX) NOT NULL,  -- store image bytes
+    FOREIGN KEY (product_id) REFERENCES Products(product_id) ON DELETE CASCADE
 );
+
 
 -- ====================================
 -- 6. Addresses
