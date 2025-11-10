@@ -59,5 +59,38 @@ namespace webapi.Repository
             }
             return customers;
         }
+        public async Task updateCustomers(Customer customer)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                string query = "update Customers set full_name = @fullname,email=@email,password=@password,phone=@phone,profile_image=@image where Customer_ID = @Cid";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Cid", customer.CustomerID);
+                    command.Parameters.AddWithValue("@fullname", customer.FullName);
+                    command.Parameters.AddWithValue("@email", customer.email);
+                    command.Parameters.AddWithValue("@password", customer.password);
+                    command.Parameters.AddWithValue("@phone", customer.phonenumber);
+                    command.Parameters.AddWithValue("@image", customer.image);
+                    await command.ExecuteNonQueryAsync();
+                }
+                await connection.CloseAsync();
+            }
+        }
+        public async Task deleteCustomers(Customer customer)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                string query = "Delete Customers where Customer_ID = @Cid";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Cid", customer.CustomerID);
+                    await command.ExecuteNonQueryAsync();
+                }
+                await connection.CloseAsync();
+            }
+        }
     }
 }

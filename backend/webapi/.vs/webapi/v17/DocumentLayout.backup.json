@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\repository\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:repository\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T07:08:07.471Z",
+              "WhenOpened": "2025-11-10T04:32:03.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T04:32:00.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CustomerRepo.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\CustomerRepo.cs",
               "RelativeDocumentMoniker": "Repository\\CustomerRepo.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\CustomerRepo.cs",
               "RelativeToolTip": "Repository\\CustomerRepo.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T07:08:01.345Z",
+              "WhenOpened": "2025-11-10T04:27:34.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Models\\Customer.cs",
-              "RelativeToolTip": "Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T07:07:58.925Z",
+              "WhenOpened": "2025-11-10T04:25:49.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T04:24:01.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\CategoryRepo.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\CategoryRepo.cs",
+              "RelativeToolTip": "Repository\\CategoryRepo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA/wB8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T04:23:28.985Z",
               "EditorCaption": ""
             }
           ]

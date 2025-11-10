@@ -8,7 +8,6 @@ namespace webapi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-
         public readonly CustomerRepo customerRepo;
         public CustomerController(CustomerRepo customerRepo)
         {

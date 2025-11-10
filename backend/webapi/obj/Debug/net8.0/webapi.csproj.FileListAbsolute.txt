@@ -49,4 +49,3 @@ C:\Users\admin\Desktop\JS\Projects\TouchShop---E-Commerce\backend\webapi\bin\Deb
 C:\Users\admin\Desktop\JS\Projects\TouchShop---E-Commerce\backend\webapi\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 C:\Users\admin\Desktop\JS\Projects\TouchShop---E-Commerce\backend\webapi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\admin\Desktop\JS\Projects\TouchShop---E-Commerce\backend\webapi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
-C:\Users\admin\Desktop\JS\Projects\TouchShop---E-Commerce\backend\webapi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
