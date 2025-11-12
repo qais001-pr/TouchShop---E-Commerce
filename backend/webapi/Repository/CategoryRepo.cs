@@ -41,7 +41,9 @@ namespace webapi.Repository
                 using (var command = new SqlCommand("SELECT COUNT(*) FROM Categories WHERE category_name=@cname", connection))
                 {
                     command.Parameters.AddWithValue("@cname", name);
+#pragma warning disable CS8605 // Unboxing a possibly null value.
                     int count = (int)await command.ExecuteScalarAsync();
+#pragma warning restore CS8605 // Unboxing a possibly null value.
                     return count == 0;
                 }
             }

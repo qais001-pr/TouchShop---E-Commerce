@@ -40,7 +40,7 @@ const ProductsHomePage = ({ navigation, route }) => {
         ToastAndroid.show('Failed to fetch products', ToastAndroid.SHORT);
       }
     } catch (error) {
-      console.error("Error fetching products:", error);
+
     }
   }
   useFocusEffect(
@@ -77,7 +77,6 @@ const ProductsHomePage = ({ navigation, route }) => {
       setLoading(false);
     } catch (error) {
       setLoading(false);
-      console.error("Error fetching product details:", error);
     }
   }
   const renderProduct = ({ item }) => (

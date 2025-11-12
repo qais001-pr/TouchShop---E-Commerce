@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using webapi.Models;
 namespace webapi.Repository
 {
@@ -12,7 +11,7 @@ namespace webapi.Repository
             this.connectionString = connection.GetConnectionString("ConnectionString")!;
         }
 
-        public async Task<LoginResponse?> LoginRequestandGetResponseofUSER(Models.LoginRequest request)
+        public async Task<LoginResponse> LoginRequestandGetResponseofUSER(Models.LoginRequest request)
         {
             LoginResponse? response = null;
 
@@ -28,7 +27,7 @@ namespace webapi.Repository
 
                     using (var reader = await command.ExecuteReaderAsync())
                     {
-                        if (await reader.ReadAsync()) // ✅ Moves to the first record
+                        if (await reader.ReadAsync())
                         {
                             response = new LoginResponse
                             {
@@ -44,8 +43,40 @@ namespace webapi.Repository
                 }
             }
 
-            return response; // null means invalid login
+            return response;
         }
 
+        public async Task<int> SignupRequestFromCustomer(SignupRequest request)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+
+                // Check if email exists
+                using (var checkCmd = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE email = @Email", connection))
+                {
+                    checkCmd.Parameters.AddWithValue("@Email", request.Email);
+                    int exists = (int)await checkCmd.ExecuteScalarAsync();
+                    if (exists > 0)
+                        return 500;
+                }
+
+                // Insert user data
+                using (var cmd = new SqlCommand(@"
+            INSERT INTO Customers (full_name, email, password, phone, profile_image)
+            OUTPUT INSERTED.customer_id
+            VALUES (@FullName, @Email, @Password, @Phone, @Image)", connection))
+                {
+                    cmd.Parameters.AddWithValue("@FullName", request.FullName);
+                    cmd.Parameters.AddWithValue("@Email", request.Email);
+                    cmd.Parameters.AddWithValue("@Password", request.Password);
+                    cmd.Parameters.AddWithValue("@Phone", request.PhoneNumber);
+                    cmd.Parameters.AddWithValue("@Image", request.imageBytes);
+
+                    var result = await cmd.ExecuteScalarAsync();
+                    return Convert.ToInt32(result);
+                }
+            }
+        }
     }
 }

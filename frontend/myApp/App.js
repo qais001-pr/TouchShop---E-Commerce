@@ -1,19 +1,27 @@
 import React from 'react'
 import AppNavigation from './src/Navigation/AppNavigation'
 import ProductDetails from './src/screens/ProductDetails'
+import LoginScreen from './src/screens/LoginScreen'
+import SignupAuthentication from './src/screens/SignupAuthentication'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native';
+import { AuthProvider } from './src/context/Auth';
+import { isNativePlatformSupported } from 'react-native-screens/lib/typescript/core'
 const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
     <>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="homeScreen" screenOptions={{ headerShown: false }}>
-          <Stack.Screen name='homeScreen' component={AppNavigation} />
-          <Stack.Screen name="ProductDetails" component={ProductDetails} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <AuthProvider>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="homeScreen" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name='homeScreen' component={AppNavigation} />
+            <Stack.Screen name="ProductDetails" component={ProductDetails} />
+            <Stack.Screen name='LoginScreen' component={LoginScreen} />
+            <Stack.Screen name='SignUpScreen' component={SignupAuthentication} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </AuthProvider>
     </>
   )
 }
