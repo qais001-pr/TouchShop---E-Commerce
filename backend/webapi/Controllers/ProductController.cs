@@ -32,5 +32,32 @@ namespace webapi.Controllers
             }
             return BadRequest("Invalid product data.");
         }
+
+        [HttpGet]
+        [Route("GetProductDetails")]
+        public async Task<IActionResult> GetProductDetails()
+        {
+            var productDetails = await productRepo.getProductwithdetails();
+            if (productDetails != null)
+            {
+                return Ok(new { status = 200, data = productDetails });
+            }
+            return NotFound(new { status = 404, message = "Product not found." });
+        }
+
+
+
+
+        [HttpGet]
+        [Route("GetProductDetailsByid/{id}")]
+        public async Task<IActionResult> GetProductDetailsByid(int id)
+        {
+            var productDetails = await productRepo.getProductwithdetailsByid(id);
+            if (productDetails != null)
+            {
+                return Ok(new { status = 200, data = productDetails });
+            }
+            return NotFound(new { status = 404, message = "Product not found." });
+        }
     }
 }

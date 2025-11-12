@@ -1,5 +1,4 @@
-﻿using System.Data.SqlClient;
-using System.Diagnostics.Eventing.Reader;
+﻿using Microsoft.Data.SqlClient;
 using webapi.Models;
 namespace webapi.Repository
 {

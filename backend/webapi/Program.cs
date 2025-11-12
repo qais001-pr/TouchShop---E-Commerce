@@ -11,6 +11,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<CustomerRepo>();
 builder.Services.AddScoped<ProductRepo>();
 builder.Services.AddScoped<CategoryRepo>();
+builder.Services.AddScoped<AdminRepo>();
+builder.Services.AddScoped<AuthRepo>();
 
 var app = builder.Build();
 
