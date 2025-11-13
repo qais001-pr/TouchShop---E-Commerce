@@ -57,7 +57,7 @@ export default function ProductDetails({ navigation, route }) {
                 <View>
                     {productDetails[0]?.reviews && productDetails[0]?.reviews.length > 0 ? (
                         productDetails[0]?.reviews.map((review, index) => (
-                            <View key={index} style={{ justifyContent: 'flex-start', height: 80, flexDirection: 'row', marginTop: 10, padding: 10, borderWidth: 1, borderColor: '#ccc', borderRadius: 5 }}>
+                            <View key={review?.rating.toString() + index} style={{ justifyContent: 'flex-start', height: 80, flexDirection: 'row', marginTop: 10, padding: 10, borderWidth: 1, borderColor: '#ccc', borderRadius: 5 }}>
                                 <Image
                                     source={{ uri: review.profile_image ? `data:image/png;base64,${review.profile_image}` : 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y' }}
                                     style={{ width: 50, height: 50, borderRadius: 50 }} />

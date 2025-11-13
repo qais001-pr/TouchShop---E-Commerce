@@ -6,7 +6,6 @@ import SignupAuthentication from './src/screens/SignupAuthentication'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './src/context/Auth';
-import { isNativePlatformSupported } from 'react-native-screens/lib/typescript/core'
 const Stack = createNativeStackNavigator();
 export default function App() {
 

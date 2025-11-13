@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\repository\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:repository\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCF182A8-B79C-4454-BB00-07F5A5F9D711}|webapi.csproj|c:\\users\\admin\\desktop\\js\\projects\\touchshop---e-commerce\\backend\\webapi\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthRepo.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\AuthRepo.cs",
               "RelativeDocumentMoniker": "Repository\\AuthRepo.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Repository\\AuthRepo.cs",
               "RelativeToolTip": "Repository\\AuthRepo.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA8wDYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwDYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T12:41:00.237Z",
               "IsPinned": true,
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\JS\\Projects\\TouchShop---E-Commerce\\backend\\webapi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -85,8 +85,7 @@
               "RelativeToolTip": "Models\\Auth.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:37:58.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T12:37:58.404Z"
             },
             {
               "$type": "Document",

@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, StatusBar, Pressable, StyleSheet, ScrollView, Image } from 'react-native'
 import React from 'react'
 import { useAuth } from '../context/Auth'
+import MaterialIcons from '@react-native-vector-icons/material-icons'
 export default function ProfileScreen({ navigation, route }) {
   const { user, login, logout } = useAuth()
   console.log(user)
@@ -17,7 +18,7 @@ export default function ProfileScreen({ navigation, route }) {
         </View>
         <Pressable onPress={signupAuthentication} >
           <View style={{ marginTop: 20, backgroundColor: '#203ba7ff', padding: 10, borderRadius: 5, alignItems: 'center' }}>
-            <Text style={{ color: '#eee8e8dd', fontSize: 20, fontWeight: '900' }}>Sign Up</Text>
+            <Text style={{ color: '#e3dfdfdd', fontSize: 20, fontWeight: '900' }}>Sign Up</Text>
           </View>
         </Pressable>
         <Pressable onPress={loginAuthentication} >
@@ -39,7 +40,7 @@ export default function ProfileScreen({ navigation, route }) {
           {/* Profile Image */}
           <View style={styles.imageContainer}>
             {profileImageUri ? (
-              <Image source={{ uri: profileImageUri }} style={styles.profileImage} />
+              <Image source={{ uri: profileImageUri || '' }} style={styles.profileImage} />
             ) : (
               <View style={styles.placeholderImage}>
                 <Text style={{ color: '#fff', fontSize: 18 }}>No Image</Text>
@@ -50,9 +51,9 @@ export default function ProfileScreen({ navigation, route }) {
           {/* User Details */}
           <View style={styles.infoContainer}>
             <View>
-              <Text style={styles.name}>{user.full_name}</Text>
-              <Text style={styles.email}>{user.email}</Text>
-              <Text style={styles.phone}>{user.phonenumber}</Text>
+              <Text style={styles.name}>{user.full_name || 'N/A'}</Text>
+              <Text style={styles.email}>{user.email || 'N/A'}</Text>
+              <Text style={styles.phone}>{user.phonenumber || 'N/A'}</Text>
             </View>
           </View>
         </View>
@@ -63,6 +64,73 @@ export default function ProfileScreen({ navigation, route }) {
             <Text style={{ fontSize: 20, textAlign: 'center', color: '#ebe308dd', letterSpacing: 2, fontWeight: '900' }}>Logout</Text>
           </View>
         </Pressable>
+
+        <View
+          style={{
+            width: '100%',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            marginVertical: 10,
+          }}
+        >
+          {/* Orders */}
+          <Pressable onPress={() => { }}>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#edeaeaff',
+                elevation: 5,
+                width: 70,
+                height: 70,
+                borderRadius: 10,
+                marginVertical: 8,
+              }}
+            >
+              <MaterialIcons name="receipt-long" size={30} color="#000" />
+              <Text style={{ fontSize: 13, marginTop: 5 }}>Orders</Text>
+            </View>
+          </Pressable>
+
+          {/* Reviews */}
+          <Pressable onPress={() => { }}>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#edeaeaff',
+                elevation: 5,
+                width: 70,
+                height: 70,
+                borderRadius: 10,
+                marginVertical: 8,
+              }}
+            >
+              <MaterialIcons name="rate-review" size={30} color="#000" />
+              <Text style={{ fontSize: 13, marginTop: 5 }}>Reviews</Text>
+            </View>
+          </Pressable>
+
+          {/* Address Book */}
+          <Pressable onPress={() => { }}>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#edeaeaff',
+                elevation: 5,
+                width: 70,
+                height: 70,
+                borderRadius: 10,
+                marginVertical: 8,
+              }}
+            >
+              <MaterialIcons name="location-on" size={30} color="#000" />
+              <Text style={{ fontSize: 13, marginTop: 5 }}>Address</Text>
+            </View>
+          </Pressable>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

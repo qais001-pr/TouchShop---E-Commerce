@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StatusBar, TouchableOpacity, TextInput, Pressable, ToastAndroid,  } from 'react-native'
+import { View, Text, SafeAreaView, StatusBar, TouchableOpacity, TextInput, Pressable, ToastAndroid, } from 'react-native'
 import React, { useState } from 'react'
 import MaterialIcons from '@react-native-vector-icons/material-icons'
 import { ipAddress } from '../../config/ipAddress'
@@ -20,12 +20,11 @@ export default function LoginScreen({ navigation, route }) {
                 }),
             });
 
-            const data = await response.json(); // directly parse JSON
+            const data = await response.json();
 
             if (response.ok) {
                 ToastAndroid.show('Login Successful', ToastAndroid.SHORT);
                 console.log("Login response:", data);
-                // If you want to store token or navigate
                 await login(data.data);
                 navigation.navigate('homeScreen');
             } else {
@@ -70,7 +69,6 @@ export default function LoginScreen({ navigation, route }) {
                         borderRadius: 100, borderWidth: 1, width: '90%',
                         justifyContent: 'center', alignSelf: 'center', padding: 13
                     }}
-                    keyboardType='visible-password'
                     value={password}
                     onChangeText={setpassword}
                 />
